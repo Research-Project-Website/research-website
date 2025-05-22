@@ -41,32 +41,32 @@ export default function DomainSection() {
     {
       title: "Literature Survey",
       description: "Comprehensive analysis of existing depression detection systems, focusing on facial expression analysis, voice pattern recognition, and natural language processing techniques in mental health assessment.",
-      icon: ""
+      icon: "📚"
     },
     {
       title: "Research Problem",
       description: "Addressing the challenge of early depression detection through the development of a multi-modal AI system that combines facial, voice, and textual analysis for more accurate mental health assessment.",
-      icon: ""
+      icon: "🔍"
     },
     {
       title: "Research Gap",
       description: "Current systems lack integration of multiple modalities and real-time analysis capabilities. Our research aims to bridge this gap by developing a comprehensive, AI-driven solution.",
-      icon: ""
+      icon: "🎯"
     },
     {
       title: "Methodology",
       description: "Implementation of deep learning models for facial expression analysis, voice pattern recognition, and NLP, combined with an interactive chatbot interface for real-time mental health monitoring.",
-      icon: ""
+      icon: "⚙️"
     },
     {
       title: "Expected Outcomes",
       description: "Development of an accurate, user-friendly system for early depression detection, featuring real-time analysis and personalized support through an AI companion.",
-      icon: ""
+      icon: "🚀"
     },
     {
       title: "Future Directions",
       description: "Expansion of the system to include additional biomarkers, integration with healthcare systems, and development of preventive intervention strategies based on collected data.",
-      icon: ""
+      icon: "🔮"
     }
   ];
 
