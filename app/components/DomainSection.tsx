@@ -10,8 +10,6 @@ export default function DomainSection() {
     threshold: 0.1,
     triggerOnce: true
   });
-  
-  // Animation variants
   const sectionVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -70,6 +68,48 @@ export default function DomainSection() {
     }
   ];
 
+
+  const domainAreas = [
+    {
+      title: "Literature Survey",
+      description: "Comprehensive analysis of existing depression detection systems, focusing on facial expression analysis, voice pattern recognition, and natural language processing techniques in mental health assessment.",
+      icon: "📚"
+    },
+    {
+      title: "Research Problem",
+      description: "Addressing the challenge of early depression detection through the development of a multi-modal AI system that combines facial, voice, and textual analysis for more accurate mental health assessment.",
+      icon: "🔍"
+    },
+    {
+      title: "Research Gap",
+      description: "Current systems lack integration of multiple modalities and real-time analysis capabilities. Our research aims to bridge this gap by developing a comprehensive, AI-driven solution.",
+      icon: "🎯"
+    },
+    {
+      title: "Methodology",
+      description: "Implementation of deep learning models for facial expression analysis, voice pattern recognition, and NLP, combined with an interactive chatbot interface for real-time mental health monitoring.",
+      icon: "⚙️"
+    },
+    {
+      title: "Expected Outcomes",
+      description: "Development of an accurate, user-friendly system for early depression detection, featuring real-time analysis and personalized support through an AI companion.",
+      icon: "🎯"
+    },
+    {
+      title: "Future Directions",
+      description: "Expansion of the system to include additional biomarkers, integration with healthcare systems, and development of preventive intervention strategies based on collected data.",
+      icon: "🚀"
+    }
+  ];
+
+  return (
+    <section id="domain" className="py-20 relative overflow-hidden bg-gradient-to-b from-gray-50 to-white">
+      {/* Glassmorphism background effects */}
+      <div className="absolute top-0 right-0 -translate-y-1/2 w-96 h-96 rounded-full bg-blue-200/30 blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 translate-y-1/4 w-96 h-96 rounded-full bg-purple-200/30 blur-3xl"></div>
+      
+      <div className="container mx-auto px-4 max-w-7xl relative z-10">
+
   return (
     <section id="domain" className="py-20 bg-white relative overflow-hidden" ref={ref}>
       {/* Background decorations */}
@@ -77,22 +117,31 @@ export default function DomainSection() {
       <div className="absolute bottom-0 left-0 translate-y-1/4 w-80 h-80 rounded-full bg-indigo-50 blur-3xl opacity-70"></div>
 
       <div className="container mx-auto px-4 max-w-6xl">
+
         <motion.div
           variants={sectionVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           className="text-center mb-12"
         >
+
+          <motion.h2 
+            variants={itemVariants} 
+            className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-blue-600"
+          >
+            Research Overview
+
           <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold mb-4">
             <AnimatedLetters text="Research " staggerDuration={0.05} initialDelay={0.2} />
             <span className="gradient-text">Domain</span>
+
           </motion.h2>
           
           <motion.p 
             variants={itemVariants}
             className="text-gray-600 max-w-3xl mx-auto text-lg"
           >
-            Depression Detection through Facial, Voice, and Text Analysis with AI-Driven Conversational Companion - A Multi-Modal Approach for Mental Health Assessment
+            Exploring the intersection of artificial intelligence, psychology, and mental health technology to advance depression detection and support.
           </motion.p>
         </motion.div>
 

@@ -111,20 +111,20 @@ export default function Footer() {
             <motion.div 
               className="flex items-center mb-6"
               variants={logoVariants}
-            >
-              <motion.div 
-                className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-primary-light text-white text-xl font-bold mr-3"
+            >              <motion.div 
+                className="relative w-10 h-10 mr-3 rounded-lg overflow-hidden bg-white/5"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                R
               </motion.div>
               <motion.span 
                 className="text-xl font-semibold"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                Research Project
+                MIRROR APP
+
+
               </motion.span>
             </motion.div>
             <motion.p 
@@ -371,7 +371,7 @@ export default function Footer() {
               className="text-gray-400 text-sm"
               whileHover={{ color: "#CBD5E0" }}
             >
-              © {currentYear} Research Project. All rights reserved.
+              © {currentYear} MIRROR. All rights reserved.
             </motion.p>
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6 text-sm">
